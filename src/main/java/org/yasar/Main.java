@@ -72,7 +72,8 @@ public class Main
 //        em.merge(usuario);
 //        em.getTransaction().commit();
 //        List<Usuario> usuarios = em.createQuery("SELECT u FROM Usuario u where u.nombre LIKE '%Diego%'").getResultList();
-        List<Usuario> usuarios = em.createQuery("SELECT u FROM Usuario u where u.id LIKE '1%'").getResultList();
+        List<Usuario> usuarios = em.createQuery("SELECT u FROM Usuario u where u.nombre LIKE '%Yas%'").getResultList();
+//        List<Usuario> usuarios = em.createQuery("SELECT u FROM Usuario u where u.id LIKE '1%'").getResultList();
         for (Usuario usuario : usuarios) {
             System.out.println(usuario);
         }

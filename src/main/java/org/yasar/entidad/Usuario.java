@@ -1,11 +1,13 @@
 package org.yasar.entidad;
 
 import javax.persistence.*;
+import javax.persistence.GenerationType;
 import java.io.Serializable;
 @Entity
 @Table(name = "usuario")
 public class Usuario implements Serializable {
     @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     private String nombre;
     private String apellido;
